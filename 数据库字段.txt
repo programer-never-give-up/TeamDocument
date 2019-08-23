@@ -1,19 +1,20 @@
 user {
 uuid: String,
-type: Enum("ÆóÒµÓÃ»§","ÆÕÍ¨ÓÃ»§")
+type: Enum("ä¼ä¸šç”¨æˆ·","æ™®é€šç”¨æˆ·")
 username: String,
 password: String,
+gender:Enumï¼ˆâ€œç”·â€ï¼Œâ€œå¥³â€ï¼‰
 email: String,
 phone_number: String,
 introduction: String,
-avatar(Í·ÏñÁ´½Ó): String,
+avatar(å¤´åƒé“¾æ¥): String,
 }
 
 actual_activity {
 uuid: String,
 name: String,
-type: Enum("»áÒé","½²×ù","»î¶¯"),
-status: Enum("Î´·¢²¼","ÉóºËÖĞ","ÒÑ·¢²¼",),
+type: Enum("ä¼šè®®","è®²åº§","æ´»åŠ¨"),
+status: Enum("æœªå‘å¸ƒ","å®¡æ ¸ä¸­","å·²å‘å¸ƒ",),
 start_time: String,
 end_time: String,
 location: String,
@@ -27,25 +28,25 @@ username,
 password
 }
 
-on_site(Êµ¼Êµ½³¡) {
+on_site(å®é™…åˆ°åœº) {
 act_uuid: String,
 user_uuid: String,
 }
 
-activity_sign_up(²Î»á±¨Ãû±í) {
+activity_sign_up(å‚ä¼šæŠ¥åè¡¨) {
 act_uuid: String,
 user_uuid: String,
-qr_code: String, -> ¶şÎ¬ÂëĞÅÏ¢
+qr_code: String, -> äºŒç»´ç ä¿¡æ¯
 }
 
-user_collection(ÓÃ»§ÊÕ²Ø¼Ğ) {
+user_collection(ç”¨æˆ·æ”¶è—å¤¹) {
 user_uuid:String,
 act_uuid:String,
 }
 
-recommended_activity(Ê×Ò³ÍÆ¼ö±í){
+recommended_activity(é¦–é¡µæ¨èè¡¨){
 activity_uuid: String,
-stay_length: String -> Í£ÁôÊ±¼ä
+stay_length: String -> åœç•™æ—¶é—´
 }
 
 recent_activity {
