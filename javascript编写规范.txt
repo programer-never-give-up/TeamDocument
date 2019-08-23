@@ -1,0 +1,18 @@
+javascript 编写规范:
+
+1. 除了商量好的通用数据，尽量不使用全局变量（不在函数外定义变量）
+2. 防止函数命名冲突，编写各自的命名空间，写法：
+---
+var myNameSpace = (function() {
+    var count = 1;
+     function name() {
+        console.log(count);
+     };
+     return {
+        funcur: name
+     }
+ })();
+myApplication.funcur(); ->这样调用
+---
+
+3. 使用驼峰命名法

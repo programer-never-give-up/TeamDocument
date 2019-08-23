@@ -1,0 +1,33 @@
+User {
+uuid: String,
+type: Enum("")
+username: String,
+password: String,
+email: String,
+phone_number: String,
+introduction: String,
+avatar(头像链接): String,
+}
+
+Activity {
+uuid: String,
+name: String,
+type: Enum("私有","公有-人工审核","公有-自动通过"), 
+status: Enum("未发布","审核中","已发布",),
+start_time: String,
+end_time: String,
+location: String,
+organizer: String,
+logo: String,
+introduction: String,
+scale(人数上限): Int 
+}
+
+Admin {
+username,
+password
+}
+
+实际参会表
+参会报名表
+首页推荐表
