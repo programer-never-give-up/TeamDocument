@@ -1,4 +1,4 @@
-User {
+user {
 uuid: String,
 type: Enum("")
 username: String,
@@ -9,10 +9,9 @@ introduction: String,
 avatar(头像链接): String,
 }
 
-Activity {
+actual_activity {
 uuid: String,
 name: String,
-type: Enum("私有","公有-人工审核","公有-自动通过"), 
 status: Enum("未发布","审核中","已发布",),
 start_time: String,
 end_time: String,
@@ -20,14 +19,24 @@ location: String,
 organizer: String,
 logo: String,
 introduction: String,
-scale(人数上限): Int 
 }
 
-Admin {
+admin {
 username,
 password
 }
 
-实际参会表
-参会报名表
-首页推荐表
+on_site(实际到场) {
+act_uuid: String,
+user_uuid: String,
+}
+
+activity_sign_up(参会报名表) {
+act_uuid: String,
+user_uuid: String,
+}
+
+recommended_activity(首页推荐表){
+activity_uuid: String,
+stay_length: String -> 停留时间
+}
