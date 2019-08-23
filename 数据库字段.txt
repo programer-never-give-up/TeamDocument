@@ -1,6 +1,6 @@
 user {
 uuid: String,
-type: Enum("")
+type: Enum("企业用户","普通用户")
 username: String,
 password: String,
 email: String,
@@ -34,9 +34,25 @@ user_uuid: String,
 activity_sign_up(参会报名表) {
 act_uuid: String,
 user_uuid: String,
+qr_code: String, -> 二维码信息
+}
+
+user_collection(用户收藏夹) {
+user_uuid:String,
+act_uuid,
 }
 
 recommended_activity(首页推荐表){
 activity_uuid: String,
 stay_length: String -> 停留时间
+}
+
+recent_activity {
+act_uuid
+}
+
+
+message {
+user_uuid:String,
+message: String
 }
