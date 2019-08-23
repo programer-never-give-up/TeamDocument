@@ -12,6 +12,7 @@ avatar(头像链接): String,
 actual_activity {
 uuid: String,
 name: String,
+type: Enum("会议","讲座","活动"),
 status: Enum("未发布","审核中","已发布",),
 start_time: String,
 end_time: String,
@@ -39,7 +40,7 @@ qr_code: String, -> 二维码信息
 
 user_collection(用户收藏夹) {
 user_uuid:String,
-act_uuid,
+act_uuid:String,
 }
 
 recommended_activity(首页推荐表){
@@ -48,11 +49,16 @@ stay_length: String -> 停留时间
 }
 
 recent_activity {
-act_uuid
+act_uuid: String
 }
-
 
 message {
 user_uuid:String,
 message: String
+}
+
+upload_record {
+act_uuid:String,
+file_path:String,
+file_name:String
 }
