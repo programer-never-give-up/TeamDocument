@@ -5,6 +5,9 @@ username: String,
 password: String,
 gender:Enum（“男”，“女”）
 email: String,
+address:String
+company:String
+profession:String
 phone_number: String,
 introduction: String,
 avatar(头像链接): String,
