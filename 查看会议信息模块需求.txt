@@ -1,3 +1,5 @@
-json 文件格式：
+前端需求说明：
+点击查看详情按钮之后，前端用活动的id向后端请求一个json文件：
+json格式如下：
 {logoSrc:"#",activityName:"#",time:{startTime:"#",endTime:"#"},location:"#",organizer:"#",introduction:"#",files:[{fileName:"#",fileSrc:"#"},..],type:"#","status":int}
     (ps:status: 0未开始 1进行中 2已结束)
