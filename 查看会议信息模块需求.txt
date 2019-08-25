@@ -1,0 +1,3 @@
+json 文件格式：
+{logoSrc:"#",activityName:"#",time:{startTime:"#",endTime:"#"},location:"#",organizer:"#",introduction:"#",files:[{fileName:"#",fileSrc:"#"},..],type:"#","status":int}
+    (ps:status: 0未开始 1进行中 2已结束)
