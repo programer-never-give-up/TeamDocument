@@ -1,5 +1,7 @@
  var userImformation=
     {
+
+
         "avatar":"https://y4ngyy.xyz/assets/avatar.jpg",
         "type":"个人",
         "address":"翻斗大街翻斗花园二号楼1001室",
