@@ -1,0 +1,15 @@
+ var userImformation=
+    {
+
+
+        "avatar":"https://y4ngyy.xyz/assets/avatar.jpg",
+        "type":"个人",
+        "address":"翻斗大街翻斗花园二号楼1001室",
+        "perfession":"幼儿园小豆班学员",
+        "company":"翻斗幼儿园",
+        "email":"bigeras.@tutu.com",
+        "gender":"男",
+        "username":"大耳朵图图",
+        "phonenumber":"123123",
+        "introduction":"我叫胡图图，今年三岁，我的爸爸叫胡英俊，我的妈妈叫张小丽，我家住在翻斗花园二号楼一零零一室，妈妈做的炸小肉丸最好吃。我的猫咪叫小怪。他是一只会说话的猫咪呦，小怪和图图一样是个男孩子，图图最喜欢的好朋友是小美，图图的耳朵很大很神奇，你们看动耳神功。"
+    };
