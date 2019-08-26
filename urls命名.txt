@@ -1,7 +1,0 @@
-    path('api/index/', views.index),#主页
-    path('api/login/', views.login),#登录页面
-    path('api/check/', views.check),#确认登录状态
-
-    path('api/register/', views.register),#登录
-    path('api/logout/', views.logout),#退出
-    path('api/verify/',views.verify),#邮箱认证
