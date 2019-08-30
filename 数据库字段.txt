@@ -1,4 +1,4 @@
-user {
+﻿user {
 uuid: String,
 type: Enum("企业用户","普通用户")
 username: String,
@@ -14,14 +14,16 @@ avatar(头像链接): String,
 }
 
 actual_activity {
+username:String,//创建者
 uuid: String,
 name: String,
 type: Enum("会议","讲座","活动"),
-status: Enum("未发布","审核中","已发布",),
+status_process: Enum("未开始","进行中","已结束",),
+status_publish:Enum("未发布","已发布","待审核")，
 start_time: String,
 end_time: String,
 location: String,
-organizer: String,
+organizer: String,//主办方
 logo: String,
 introduction: String,
 }
